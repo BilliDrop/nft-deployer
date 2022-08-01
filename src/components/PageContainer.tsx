@@ -1,11 +1,10 @@
+import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import React from 'react';
-import {Route, withRouter, Switch, RouteComponentProps} from 'react-router-dom';
-
-import { makeStyles, createStyles, Theme } from '@material-ui/core/styles';
+import {Route, RouteComponentProps,Switch, withRouter} from 'react-router-dom';
 
 import Navigation from './Navigation';
-import HomePage from '../pages/HomePage';
 import DeployPage from '../pages/DeployPage';
+import HomePage from '../pages/HomePage';
 import MintPage from '../pages/MintPage';
 
 const useStyles = makeStyles((theme: Theme) =>

@@ -1,20 +1,17 @@
-import React from 'react';
-
-import { withRouter, RouteComponentProps } from "react-router";
-
-import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
-import CardContent from '@material-ui/core/CardContent';
-import CardActionArea from '@material-ui/core/CardActionArea';
+import { formatEther } from '@ethersproject/units'
 import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import CardContent from '@material-ui/core/CardContent';
 import Container from '@material-ui/core/Container';
 import Grid from '@material-ui/core/Grid';
-import DeployIcon from '@material-ui/icons/CloudUpload';
+import { makeStyles } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
 import MintIcon from '@material-ui/icons/AddPhotoAlternate';
-
+import DeployIcon from '@material-ui/icons/CloudUpload';
 import { useEtherBalance, useEthers } from '@usedapp/core'
-import { formatEther } from '@ethersproject/units'
+import React from 'react';
+import { RouteComponentProps,withRouter } from "react-router";
 
 const useStyles = makeStyles({
     root: {

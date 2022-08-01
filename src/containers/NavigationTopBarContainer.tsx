@@ -1,8 +1,7 @@
 import { connect, ConnectedProps } from 'react-redux';
 
-import { setShowLeftMenu, setDarkMode } from '../state/actions';
-
 import NavigationTopBar from '../components/NavigationTopBar';
+import { setDarkMode,setShowLeftMenu } from '../state/actions';
 
 interface RootState {
     showLeftMenu: boolean;

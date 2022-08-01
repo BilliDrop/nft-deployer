@@ -1,7 +1,8 @@
 import {combineReducers} from 'redux';
-import showLeftMenu from './showLeftMenu';
+
 import activeAccount from './activeAccount';
 import darkMode from './darkMode'
+import showLeftMenu from './showLeftMenu';
 
 const rootReducer = combineReducers({
     showLeftMenu,

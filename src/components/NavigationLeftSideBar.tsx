@@ -1,15 +1,14 @@
-import React, {useState, useEffect} from 'react';
-import { withRouter, RouteComponentProps } from "react-router";
-
-import { makeStyles } from '@material-ui/core/styles';
 import Drawer from '@material-ui/core/Drawer';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import HomeIcon from '@material-ui/icons/Home';
-import DeployIcon from '@material-ui/icons/CloudUpload';
+import { makeStyles } from '@material-ui/core/styles';
 import MintIcon from '@material-ui/icons/AddPhotoAlternate';
+import DeployIcon from '@material-ui/icons/CloudUpload';
+import HomeIcon from '@material-ui/icons/Home';
+import React, {useEffect,useState} from 'react';
+import { RouteComponentProps,withRouter } from "react-router";
 
 import { PropsFromRedux } from '../containers/NavigationLeftSideBarContainer';
 
@@ -67,8 +66,8 @@ function NavigationLeftSideBar(props: PropsWithRouter) {
 
   return (
     <div>
-        <React.Fragment key={'left'}>
-            <Drawer anchor={'left'} open={localShowLeftMenu} onClose={toggleDrawer(false)}>
+        <React.Fragment key="left">
+            <Drawer anchor="left" open={localShowLeftMenu} onClose={toggleDrawer(false)}>
                 <div
                     className={classes.list}
                     role="presentation"

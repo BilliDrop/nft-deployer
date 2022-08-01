@@ -1,7 +1,7 @@
 import React from 'react';
 
-import NavigationTopBarContainer from '../containers/NavigationTopBarContainer';
 import NavigationLeftSideBarContainer from '../containers/NavigationLeftSideBarContainer';
+import NavigationTopBarContainer from '../containers/NavigationTopBarContainer';
 
 type NavigationProps = {
     children: React.ReactNode

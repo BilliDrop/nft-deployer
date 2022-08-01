@@ -1,18 +1,15 @@
-import React, { useState, useEffect } from 'react';
-
-import { withRouter, RouteComponentProps } from "react-router";
-
-import { useEthers } from '@usedapp/core'
-
-import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
-import Toolbar from '@material-ui/core/Toolbar';
-import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import IconButton from '@material-ui/core/IconButton';
+import { createStyles, makeStyles, Theme } from '@material-ui/core/styles';
+import Toolbar from '@material-ui/core/Toolbar';
+import Typography from '@material-ui/core/Typography';
 import MenuIcon from '@material-ui/icons/Menu';
 import DarkModeIcon from '@material-ui/icons/NightsStay';
 import LightModeIcon from '@material-ui/icons/WbSunny';
+import { useEthers } from '@usedapp/core'
+import React, { useEffect,useState } from 'react';
+import { RouteComponentProps,withRouter } from "react-router";
 
 import { PropsFromRedux } from '../containers/NavigationTopBarContainer';
 

@@ -1,8 +1,7 @@
 import { connect, ConnectedProps } from 'react-redux';
 
-import { setShowLeftMenu } from '../state/actions';
-
 import NavigationLeftSideBar from '../components/NavigationLeftSideBar';
+import { setShowLeftMenu } from '../state/actions';
 
 interface RootState {
     showLeftMenu: boolean

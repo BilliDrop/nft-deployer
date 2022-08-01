@@ -1,23 +1,18 @@
-import React, { useState } from 'react';
-
-import { ContractFactory } from 'ethers';
-
-import { withRouter, RouteComponentProps } from "react-router";
-
-import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
+import { formatEther } from '@ethersproject/units'
+import { LinearProgress } from '@material-ui/core';
+import Button from '@material-ui/core/Button';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
-import Button from '@material-ui/core/Button';
-import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
-
-import { Formik, Form, Field } from 'formik';
-import { LinearProgress } from '@material-ui/core';
-import { TextField } from 'formik-material-ui';
-
+import Paper from '@material-ui/core/Paper';
+import { makeStyles } from '@material-ui/core/styles';
+import Typography from '@material-ui/core/Typography';
 import { useEtherBalance, useEthers } from '@usedapp/core'
-import { formatEther } from '@ethersproject/units'
+import { ContractFactory } from 'ethers';
+import { Field,Form, Formik } from 'formik';
+import { TextField } from 'formik-material-ui';
+import React, { useState } from 'react';
+import { RouteComponentProps,withRouter } from "react-router";
 
 import { getEtherscanLink } from '../utils';
 import { ERC721ABI, ERC721ByteCode } from '../utils/constants';
@@ -130,11 +125,11 @@ const DeployPage = (props: RouteComponentProps) => {
 
                         setIsAwaitingMetaMaskConfirmation(true);
 
-                        let contract = await factory.deploy(values.name, values.symbol);
+                        const contract = await factory.deploy(values.name, values.symbol);
                         
                         setIsAwaitingMetaMaskConfirmation(false);
 
-                        let transactionHash = contract.deployTransaction.hash;
+                        const transactionHash = contract.deployTransaction.hash;
 
                         setPendingContractDeploymentTransaction(transactionHash);
 

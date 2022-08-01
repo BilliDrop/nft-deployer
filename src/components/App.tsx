@@ -1,16 +1,13 @@
-import React from 'react';
-
-import { HashRouter } from 'react-router-dom';
-
+import CssBaseline from '@material-ui/core/CssBaseline';
 import { createMuiTheme } from '@material-ui/core/styles';
 import { ThemeProvider } from '@material-ui/styles';
-import CssBaseline from '@material-ui/core/CssBaseline';
+import React from 'react';
+import { HashRouter } from 'react-router-dom';
 
 import '../styles/App.css';
-import { configureHistory } from '../utils';
-import { PropsFromRedux } from '../containers/AppContainer';
 
 import PageContainer from './PageContainer';
+import { PropsFromRedux } from '../containers/AppContainer';
 
 const App = (props: PropsFromRedux) => {
 
