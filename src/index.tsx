@@ -16,7 +16,10 @@ const config = {
 }
 
 ReactDOM.render(
+  
   <React.StrictMode>
+        <div  className="container">
+
     <Provider store={store}>
       <DAppProvider config={config}>
         <AppContainer />
