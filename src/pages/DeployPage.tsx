@@ -196,7 +196,7 @@ const DeployPage = (props: RouteComponentProps) => {
                                 {chainId && contractDeploymentSuccessful && typeof contractDeploymentSuccessful === "string" && 
                                     <div style={{textAlign: 'center', display: 'flex', flexDirection: 'column'}}>
                                         <span>Contract Deployment Successful: <a style={{color: '#39bfff'}} href={getEtherscanLink(contractDeploymentSuccessful, 'address', chainId)} target="_blank" rel="noreferrer noopener">View On Etherscan</a></span>
-                                        <span style={{marginTop: 15}}>What's Next?</span>
+                                        <span style={{marginTop: 15}}>What'&apos;s Next?</span>
                                         <Button
                                             variant="contained"
                                             color="primary"
