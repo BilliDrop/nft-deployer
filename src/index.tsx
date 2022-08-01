@@ -18,14 +18,16 @@ const config = {
 ReactDOM.render(
   
   <React.StrictMode>
-        <div  className="container">
 
     <Provider store={store}>
       <DAppProvider config={config}>
+                <div  className="container">
+
         <AppContainer />
+                                </div>
+
       </DAppProvider>
     </Provider>
-              </div>
 
   </React.StrictMode>,
   document.getElementById('root')
