@@ -60,7 +60,7 @@ const NavigationTopBar = (props: PropsFromRedux & RouteComponentProps) => {
             <MenuIcon />
           </IconButton>
           <Typography variant="h6" className={classes.title}>
-            <span style={{cursor: 'pointer'}} onClick={() => history.push('/')}><img src="https://uploads-ssl.webflow.com/6291469e60c3ca1bf75c7241/62a116b227d6fe8df3bb18fe_BilliDrop-Wordmark-Light.svg" width="187" alt="" class="logo"></span>
+            <span style={{cursor: 'pointer'}} onClick={() => history.push('/')}><img src="https://uploads-ssl.webflow.com/6291469e60c3ca1bf75c7241/62a116b227d6fe8df3bb18fe_BilliDrop-Wordmark-Light.svg"/></span>
           </Typography>
           {account ? (
             <Button color="secondary" variant="contained" onClick={() => deactivate()}>Disconnect</Button>
