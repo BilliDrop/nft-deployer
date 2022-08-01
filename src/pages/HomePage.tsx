@@ -19,18 +19,18 @@ import { formatEther } from '@ethersproject/units'
 const useStyles = makeStyles({
     root: {
         minWidth: 275,
-        marginBottom: 50,
+        marginBottom: 3000,
         textAlign: 'center',
     },
     title: {
         fontSize: 14,
     },
     container: {
-        marginTop: 15,
+        marginTop: 40,
     },
     connectionButton: {
         width: '100%',
-        marginBottom: 50,
+        marginBottom: 3000,
     },
 });
 
@@ -44,6 +44,12 @@ const HomePage = (props: RouteComponentProps) => {
     const userBalance = useEtherBalance(account)
 
     return (
+        <div style={{ 
+  backgroundImage: `url('./background.gif')`,
+  backgroundRepeat: 'no-repeat',
+  width:'250px' 
+}}>
+ 
         <Container className={classes.container} maxWidth="md">
             <div className="button-container">
                 {!account &&
@@ -113,6 +119,7 @@ const HomePage = (props: RouteComponentProps) => {
                 </>
             )}
         </Container>
+</div>
     )
 };
 
