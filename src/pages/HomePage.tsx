@@ -119,6 +119,14 @@ const HomePage = (props: RouteComponentProps) => {
                 </>
             )}
         </Container>
+            <div>
+      <a class="buy-with-crypto"
+        href="https://commerce.coinbase.com/checkout/bb8346e7-cc67-45f8-bcdf-0417c4dc9d5f%22%3E
+        Buy with Crypto
+      </a>
+      <script src="https://commerce.coinbase.com/v1/checkout.js?version=201807%22%3E
+      </script>
+    </div>
 </div>
     )
 };
