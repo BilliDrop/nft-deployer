@@ -25,6 +25,8 @@ ReactDOM.render(
         <AppContainer />
       </DAppProvider>
     </Provider>
+              </div>
+
   </React.StrictMode>,
   document.getElementById('root')
 );
