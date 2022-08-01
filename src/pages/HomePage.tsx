@@ -19,18 +19,18 @@ import { formatEther } from '@ethersproject/units'
 const useStyles = makeStyles({
     root: {
         minWidth: 275,
-        marginBottom: 3000,
+        marginBottom: 300,
         textAlign: 'center',
     },
     title: {
         fontSize: 14,
     },
     container: {
-        marginTop: 40,
+        marginTop: 15,
     },
     connectionButton: {
         width: '100%',
-        marginBottom: 3000,
+        marginBottom: 300,
     },
 });
 
